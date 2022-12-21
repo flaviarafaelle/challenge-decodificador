@@ -1,32 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="style/assets/Logo (2).svg" type="image/x-icon">
-    <title>Decodificador</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/assets/images/logo-alura.svg.svg" type="image/x-icon">
+  <title>Decodificador de texto | Challenge ONE</title>
+  <link rel="stylesheet" href="./assets/css/variables.css">
+  <link rel="stylesheet" href="./assets/css/reset-meyer.css">
+  <link rel="stylesheet" href="./assets/css/grid.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/media-query.css">
 </head>
 <body>
-    <div class="logo">
-    <h1><img src="/style/assets/Logo (2).svg" alt="Logo da Alura"></h1>
+    <div class="container">
+      <main>
+        <header>
+          <div>
+            <img src="/assets/images/logo-alura.svg.svg" alt="Logo Alura">
+          </div>
+        </header>
+        <div class="input-field">
+          <textarea
+            name="text-input-field"
+            id="text-input-field"
+            cols="30"
+            rows="10"
+            placeholder="Digite seu texto"
+          ></textarea>
+          <div class="controls">
+            <div class="instruction">
+              <img src="/assets/images/bi_exclamation-circle-fill.svg" alt="Ícone de exclamação">
+              <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="button-box">
+              <button class="btn btn-encrypt">Criptografar</button>
+              <button class="btn btn-decrypt">Descriptografar</button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="text-output-field">
+        <div class="view-default">
+          <img src="/assets/images/High quality products 1 1.svg" class="illustration" alt="Ilustração de uma pessoa verificando um diamante com uma lupa.">
+          <div class="msg-default">
+            <p>Nenhuma mensagem encontrada</p>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+          </div>
+        </div>
+      </div>
+      
     </div>
 
-  <form>
-    <div>
-      <input
-        type="text"
-        placeholder="Digite seu texto"
-        size="30" />
-    </div>
-  </form>
-
-    <!-- <div class="direita">
-        <img src="/style/assets/High quality products 1 1.svg" alt="">
-        <h3>Nenhuma mensagem encontrada</h3>
-        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-    </div> -->
+  <script src="./assets/javascript/main.js"></script>
 </body>
 </html>
