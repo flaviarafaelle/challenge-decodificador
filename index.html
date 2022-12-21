@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/assets/images/logo-alura.svg.svg" type="image/x-icon">
   <title>Decodificador de texto | Challenge ONE</title>
-  <link rel="stylesheet" href="./assets/css/variables.css">
-  <link rel="stylesheet" href="./assets/css/reset-meyer.css">
-  <link rel="stylesheet" href="./assets/css/grid.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/media-query.css">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/reset-meyer.css">
+  <link rel="stylesheet" href="/assets/css/grid.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/media-query.css">
 </head>
 <body>
     <div class="container">
@@ -34,7 +34,7 @@
               <p>Apenas letras minúsculas e sem acento.</p>
             </div>
             <div class="button-box">
-              <button class="btn btn-encrypt">Criptografar</button>
+              <button onclick="myFunction()" class="btn btn-encrypt">Criptografar</button>
               <button class="btn btn-decrypt">Descriptografar</button>
             </div>
           </div>
@@ -42,7 +42,7 @@
       </main>
 
       <div class="text-output-field">
-        <div class="view-default">
+        <div class="view-default" id="myDIV">
           <img src="/assets/images/High quality products 1 1.svg" class="illustration" alt="Ilustração de uma pessoa verificando um diamante com uma lupa.">
           <div class="msg-default">
             <p>Nenhuma mensagem encontrada</p>
@@ -53,6 +53,6 @@
       
     </div>
 
-  <script src="./assets/javascript/main.js"></script>
+  <script src="/assets/javascript/main.js"></script>
 </body>
 </html>
