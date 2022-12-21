@@ -1,6 +1,8 @@
+/*
 * {
     border: 1px solid #000000;
 }
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
@@ -13,10 +15,24 @@ body {
     left: 2%;
 }
 
-h2 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    color: #0A3871;
+input[type=text] {
+    background-color: #F3F5FC;
+    width: 40%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #F3F5FC;
+    resize: none;
+}
+
+input::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-weight: regular;
+  font-size: 1.8em;
+  color: #0A3871;
 }
 
 .texto-digitado {
@@ -26,3 +42,4 @@ h2 {
     position: absolute;
     margin-top: 4%;
 }
+
