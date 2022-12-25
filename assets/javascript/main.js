@@ -1,13 +1,39 @@
-function myFunction() {
+function codificar() {
   const texto = document.getElementById("text-input-field")?.value;
-  const decodificado = document.getElementById("myDIV");
-  decodificado?.textContent=texto
+
+  if(validar(texto)) {
+    alert("Apenas letras minúsculas e sem acento.");
+    document.getElementById("text-input-field").value = "";
+    return;
+  }
+
+  const modalInstrucoes = document.getElementById("modalInstrucoes");
+  modalInstrucoes.style = "display: none;";
+
+  const modalCodificado = document.getElementById("modalCodificado");
+  modalCodificado.style = "";
+
+  let split = texto.split("");
+  console.log(split);
+
+  for (let i = 0; i <= split.length; i++) {
+    if (split[i] === "a") {
+      split[i] = "ai";
+    } else if (split[i] === "e") {
+      split[i] = "enter";
+    } else if (split[i] === "i") {
+      split[i] = "imes";
+    } else if (split[i] === "o") {
+      split[i] = "ober";
+    } else if (split[i] === "u") {
+      split[i] = "ufat";
+    }
+  }
+
+  modalCodificado.innerHTML = split.join("");
 }
 
-//1 remover conteudo dentro da div
-//2 colocar valor texto dentro da div que sumiu
-//3 pegar valor do texto e separar em array (banana split)
-//4 fazer um for, olhando o array (passo 3)
-//5 criar verificacores (if's) p cada letra
-//6 se if verdadeiro, alterar valor posicao encontrada
-//7 confirmar se passo 2 funciona
+function validar (texto) {
+  return (texto.match(new RegExp("[A-Z]|[À-Ú]|[à-ú]")))
+}
+

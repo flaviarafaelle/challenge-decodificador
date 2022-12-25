@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/assets/images/logo-alura.svg.svg" type="image/x-icon">
-  <title>Decodificador de texto | Challenge ONE</title>
+  <title>Decodificador | Challenge ONE</title>
   <link rel="stylesheet" href="/assets/css/variables.css">
   <link rel="stylesheet" href="/assets/css/reset-meyer.css">
   <link rel="stylesheet" href="/assets/css/grid.css">
@@ -17,7 +17,7 @@
       <main>
         <header>
           <div>
-            <img src="/assets/images/logo-alura.svg.svg" alt="Logo Alura">
+            <a href=""><img onclick="location.reload()" src="/assets/images/logo-alura.svg.svg" alt="Logo Alura"></a>
           </div>
         </header>
         <div class="input-field">
@@ -34,7 +34,7 @@
               <p>Apenas letras minúsculas e sem acento.</p>
             </div>
             <div class="button-box">
-              <button onclick="myFunction()" class="btn btn-encrypt">Criptografar</button>
+              <button onclick="codificar()" class="btn btn-encrypt">Criptografar</button>
               <button class="btn btn-decrypt">Descriptografar</button>
             </div>
           </div>
@@ -42,12 +42,15 @@
       </main>
 
       <div class="text-output-field">
-        <div class="view-default" id="myDIV">
+        <div class="view-default" id="modalInstrucoes">
           <img src="/assets/images/High quality products 1 1.svg" class="illustration" alt="Ilustração de uma pessoa verificando um diamante com uma lupa.">
           <div class="msg-default">
             <p>Nenhuma mensagem encontrada</p>
             <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
           </div>
+        </div>
+        <div style="display: none;" class="view-default" id="modalCodificado">
+          
         </div>
       </div>
       
