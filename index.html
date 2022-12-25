@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/assets/images/logo-alura.svg.svg" type="image/x-icon">
-  <title>Decodificador | Challenge ONE</title>
-  <link rel="stylesheet" href="/assets/css/variables.css">
-  <link rel="stylesheet" href="/assets/css/reset-meyer.css">
-  <link rel="stylesheet" href="/assets/css/grid.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="/assets/css/media-query.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo-alura.svg.svg"
+      type="image/x-icon"
+    />
+    <title>Decodificador | Challenge ONE</title>
+    <link rel="stylesheet" href="/assets/css/variables.css" />
+    <link rel="stylesheet" href="/assets/css/reset-meyer.css" />
+    <link rel="stylesheet" href="/assets/css/grid.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/media-query.css" />
+  </head>
+  <body>
     <div class="container">
       <main>
         <header>
           <div>
-            <a href=""><img onclick="location.reload()" src="/assets/images/logo-alura.svg.svg" alt="Logo Alura"></a>
+            <a href=""
+              ><img
+                onclick="location.reload()"
+                src="/assets/images/logo-alura.svg.svg"
+                alt="Logo Alura"
+            /></a>
           </div>
         </header>
         <div class="input-field">
@@ -30,12 +39,19 @@
           ></textarea>
           <div class="controls">
             <div class="instruction">
-              <img src="/assets/images/bi_exclamation-circle-fill.svg" alt="Ícone de exclamação">
+              <img
+                src="/assets/images/bi_exclamation-circle-fill.svg"
+                alt="Ícone de exclamação"
+              />
               <p>Apenas letras minúsculas e sem acento.</p>
             </div>
             <div class="button-box">
-              <button onclick="codificar()" class="btn btn-encrypt">Criptografar</button>
-              <button onclick="decodificar()" class="btn btn-decrypt">Descriptografar</button>
+              <button onclick="codificar()" class="btn btn-encrypt">
+                Criptografar
+              </button>
+              <button onclick="decodificar()" class="btn btn-decrypt">
+                Descriptografar
+              </button>
             </div>
           </div>
         </div>
@@ -43,19 +59,27 @@
 
       <div class="text-output-field">
         <div class="view-default" id="modalInstrucoes">
-          <img src="/assets/images/High quality products 1 1.svg" class="illustration" alt="Ilustração de uma pessoa verificando um diamante com uma lupa.">
+          <img
+            src="/assets/images/High quality products 1 1.svg"
+            class="illustration"
+            alt="Ilustração de uma pessoa verificando um diamante com uma lupa."
+          />
           <div class="msg-default">
             <p>Nenhuma mensagem encontrada</p>
-            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <p>
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
           </div>
         </div>
-        <div style="display: none;" class="view-default" id="modalCodificado">
-          
+        <div style="display: none" class="view-default modal-codificado" id="modalCodificado">
+          <div id="codificado"></div>
+          <button onclick="copiar()" class="btn">
+            Copiar
+          </button>
         </div>
       </div>
-      
     </div>
 
-  <script src="/assets/javascript/main.js"></script>
-</body>
+    <script src="/assets/javascript/main.js"></script>
+  </body>
 </html>

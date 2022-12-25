@@ -1,7 +1,7 @@
 function codificar() {
   const texto = document.getElementById("text-input-field")?.value;
 
-  if(validar(texto)) {
+  if (validar(texto)) {
     alert("Apenas letras minúsculas e sem acento.");
     document.getElementById("text-input-field").value = "";
     return;
@@ -29,18 +29,18 @@ function codificar() {
       split[i] = "ufat";
     }
   }
-
-  modalCodificado.innerHTML = split.join("");
+  const codificado = document.getElementById("codificado");
+  codificado.innerHTML = split.join("");
 }
 
-function validar (texto) {
-  return (texto.match(new RegExp("[A-Z]|[À-Ú]|[à-ú]")))
+function validar(texto) {
+  return texto.match(new RegExp("[A-Z]|[À-Ú]|[à-ú]"));
 }
 
-function decodificar (){
+function decodificar() {
   let texto = document.getElementById("text-input-field")?.value;
 
-  if(validar(texto)) {
+  if (validar(texto)) {
     alert("Apenas letras minúsculas e sem acento.");
     document.getElementById("text-input-field").value = "";
     return;
@@ -52,10 +52,18 @@ function decodificar (){
   const modalCodificado = document.getElementById("modalCodificado");
   modalCodificado.style = "";
 
-  texto = texto.replace("ai", "a")
-  texto = texto.replace("enter", "e")
-  texto = texto.replace("imes", "i")
-  texto = texto.replace("ober", "o")
-  texto = texto.replace("ufat", "u")
-  modalCodificado.innerHTML = texto
+  texto = texto.replaceAll("ai", "a");
+  texto = texto.replaceAll("enter", "e");
+  texto = texto.replaceAll("imes", "i");
+  texto = texto.replaceAll("ober", "o");
+  texto = texto.replaceAll("ufat", "u");
+
+  const codificado = document.getElementById("codificado");
+
+  codificado.innerHTML = texto;
+}
+
+function copiar(){
+  const text = document.getElementById("codificado")?.innerText;
+  navigator.clipboard.writeText(text)
 }

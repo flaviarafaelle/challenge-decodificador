@@ -111,3 +111,7 @@ body {
   line-height: 120%;
   margin-bottom: 1.6rem;
 }
+
+.modal-codificado {
+  justify-content: space-between !important
+}
