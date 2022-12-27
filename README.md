@@ -1,4 +1,4 @@
-# Challenge decodificador de texto T4 - Oracle + Alura Challenge 🔒
+# Decodificador de texto - Oracle + Alura Challenge 🔒
 ![Captura de Tela (111)](https://user-images.githubusercontent.com/101022170/209724013-97371425-47cb-4377-a292-e2cccd4ddb29.png)
 
 ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
