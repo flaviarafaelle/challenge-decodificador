@@ -5,7 +5,7 @@
 ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
-Para melhor visualização, o projeto enontra-se em deploy [AQUI](https://challenge-decodificador.vercel.app/)!
+Para melhor visualização, o projeto enontra-se em deploy [AQUI](https://flaviarafaelle.github.io/challenge-decodificador/)!
 
 ## Sobre o desafio
 O projeto faz parte da primeira fase da seleção ONE (Oracle Next Education) em parceria com a Alura e possui como objetivo a criptografia de textos.
